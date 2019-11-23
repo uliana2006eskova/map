@@ -22,5 +22,12 @@
   zoom:  9
   });
   </script>
+  <button type="text" name="button">Технари</button>
+        <button type="text" name="button">Гуманитарий</button>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit" class="btn btn-success">Найти</button>
+        </form>
 </body>
 </html>
